@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiovisuales</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        /* Video ocupa todo el espacio */
+.centrado video {
+    width: 100vw;
+    height: calc(100vh - 50px); 
+    object-fit: cover; 
+}
+
+/* Galería de imágenes */
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%; 
+    box-sizing: border-box; 
+}
+
+div.gallery img {
+    width: 100%; 
+    height: auto; 
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px; 
+}
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>BRUNO RAMÓN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centrado">
+        <video src="../ejercicio final/ASSESTS/InShot_20230305_101500227.mp4" autoplay muted controls="300px"></video>
+    </div>
+    
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="../ejercicio final/ASSESTS/IMG_20220306_120320682.jpg" target="_blank"><img src="../ejercicio final/ASSESTS/IMG_20220306_120320682.jpg" alt="Bruno Imagen 1" width="600"></a>
+            <div class="desc">Bruno 1</div>
+        </div>
+        <div class="gallery">
+            <a href="../ejercicio final/ASSESTS/IMG-20230725-WA0019.jpg" target="_blank"><img src="../ejercicio final/ASSESTS/IMG-20230725-WA0019.jpg" alt="Bruno  Imagen 2" width="600"></a>
+            <div class="desc">Bruno 2</div>
+        </div>
+        <div class="gallery">
+            <a href="../ejercicio final/ASSESTS/IMG-20220324-WA0009.jpg" target="_blank"><img src="../ejercicio final/ASSESTS/IMG-20220324-WA0009.jpg" alt="Bruno Imagen 3" width="600"></a>
+            <div class="desc">Bruno 3</div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
+</body>
+
+</html>

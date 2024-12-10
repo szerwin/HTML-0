@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tablas</title>
+<!--style lo agrego para darle deatlles a la tabla como color y bordes se puede usar de esta manera o llamando un archico ccs-->
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 3px saddlebrown;
+        letter-spacing: 1px;
+        font-size: 0.8 rem;
+      }
+      td {
+        border: 2px solid black;
+        padding: 10px 20px;
+      }
+      th {
+        border: 2px solid black;
+        padding: 10px 20px;
+        background-color: rgb(238, 173, 74);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>horarios de materias secundaria</h1>
+    <hr />
+
+    <table>
+      
+      <tr><!--Crea una fila en la tabla.-->
+        <th>hora/día</th><!--Crea una celda de encabezado, con estilo visual distintivo para identificar categorías o títulos.-->
+        <th>lunes</th><!--th es para las filas-->
+        <th>martes</th>
+        <th>miércoles</th>
+        <th>jueves</th>
+        <th>viernes</th>
+      </tr>
+
+      <tr>
+        <th>7 am -9 am</th>
+        <td>sociales</td> <!-- td se utiliza para definir celdas de datos dentro de una tabla. Es decir, <td> representa el contenido de una celda regular en una tabla, que no es un encabezado.-->
+        <td>cálculo</td>
+        <td>química</td>
+        <td>ed.fisica</td>
+        <td>sociales</td>
+      </tr>
+      <tr>
+        <th>9 am - 11 am</th>
+        <td>informática</td>
+        <td>religión</td>
+        <td>ética</td>
+        <td>artistica</td>
+        <td>álgebra</td>
+      </tr>
+
+      <tr>
+        <th>11 am - 11:30 am</th>
+        <td style="background-color: rgb(7, 158, 75)">descanso</td>
+        <td style="background-color: rgb(7, 158, 75)">descanso</td>
+        <td style="background-color: rgb(7, 158, 75)">descanso</td>
+        <td style="background-color: rgb(7, 158, 75)">descanso</td>
+        <td style="background-color: rgb(7, 158, 75);">descanso</td>
+      </tr>
+      <tr>
+        <th>11:30 am - 12:30 pm</th>
+        <td>biologia</td>
+        <td>ciencias políticas</td>
+        <td>estadistica</td>
+        <td>ingléss</td>
+        <td>inglés</td>
+      </tr>
+
+      <tr>
+        <th>12:30 pm - 1:30 pm</th>
+        <td>álgebra</td>
+        <td>inglés</td>
+        <td>biología</td>
+        <td>ciencias políticas</td>
+        <td>estadistica</td>
+      </tr>
+    </table>
+  </body>
+</html>

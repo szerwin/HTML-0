@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios </title>
+</head>
+<body>
+    <h1>formulario:</h1>
+    <hr>
+    <form action="inicio.ph" method="post" target="_blank"><!--action="inicio.ph" method="post" target="_blank es para que el formulario sea enviado al backend, aca se hace un ejemplo de como realizarzo usando ph -->
+      <label for="usuario">usuario:</label>
+      <input type="text" id="usuario" name="usuario" placeholder="escribe aquí tu nombre" maxlength="20" min="4" required> <!--si utilizamos readonly el nombre del campo del formulario no se va poder editar////expersiones regulares para dar limitaciones  -->
+      <br>
+      <br>
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="escribe aquí tu correo electronico" required> <!--si utilizamos readonly el nombre del campo del formulario no se va poder editar////expersiones regulares para dar limitaciones  -->
+      <br>
+      <br>
+      <label for="password">contraseña:</label>
+      <input type="password" id="password" name="password" placeholder="escribe aquí tu contraseña" required>
+
+      <hr>
+      <!--checkbox permite seleccionar más de una opción-->
+      <input type="checkbox" id="condiciones" name="condiciones" >¿está de acuerdo con las condiciones de trabajo?
+      <input type="checkbox" id="condiciones" name="condiciones" >¿está de acuerdo con las condiciones de estudio?
+      <input type="checkbox" id="condiciones" name="condiciones" >¿está de acuerdo con las condiciones de desarrollo?
+      <hr>
+       <!--radio permite seleccionar solamente  una opción-->
+      <input type="radio" id="opcion1" name="respuesta" value="si">si
+      <input type="radio" id="opcion2" name="respuesta" value="no">no
+      <input type="radio" id="opcion3" name="respuesta" value="tal vez">tal vez
+      <hr>
+ <!--NUMBER permite colocar numeros -->
+      <label for="trabajo">años trabajando en desarrollo:</label>
+      <input type="number" id="trabajo" name="trabajo" placeholder="¿cuánto llevas trabajando en el desarrollo?">
+      <hr>
+<!--input de fecha-->
+<label for="fecha">ingresa una fecha</label>
+<input type="date" id="fecha" name="fecha" >
+<hr>
+      <!--para textos extensos , ejm dar una aopinión-->
+      <label for="observaciones">observaciones:</label>
+      <textarea  id="observaciones" name="observaciones" placeholder=" observación al respecto"></textarea>
+      <hr>
+<!--select para realizar la seleccion dntro de varias opciones-->
+     <label for="ciudad"> selecciona tu ciudad:</label>
+     <select name="ciudad" id="ciudad">
+        <option value="popayan"> Popayán</option>
+        <option value="cali">Cali</option>
+        <option value="neiva">Neiva</option>
+        <option value="pasto">Pasto</option>
+
+     </select>
+
+     <hr>
+     <!--input de envio y resetear-->
+
+     <input type="submit" value="enviar datos">
+     <br>
+     <br>
+     <input type="reset" value="borra datos">
+     <hr>
+
+     <!--boton de alerta-->
+     <input type="button" onclick="alert(`nos encontramos realizando formularios`)" value="alerta">
+
+
+
+    </form>
+</body>
+</html>

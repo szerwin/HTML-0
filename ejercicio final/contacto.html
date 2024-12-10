@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #92a4ff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #061350;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 50%;
+            max-width: 500px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>BRUNO RAMÓN</h1>
+        <nav>
+            <ul>
+                <li><a href="paginaweb.html">Inicio</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisual.html">Audiovisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe aquí tu apellido" required>
+
+                <label for="mail">Correo Electrónico:</label>
+                <input type="email" name="mail" id="mail" placeholder="Escribe tu correo electrónico" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="cali">Cali</option>
+                    <option value="bogota">Bogotá</option>
+                    <option value="neiva">Neiva</option>
+                    <option value="medellin">Medellín</option>
+                    <option value="popayan">Popayán</option>
+                    <option value="pasto">Pasto</option>
+                    <option value="leticia">Leticia</option>
+                    <option value="santamarta">Santa Marta</option>
+                    <option value="cartagena">Cartagena</option>
+                    <option value="armenia">Armenia</option>
+                    <option value="pereira">Pereira</option>
+                </select>
+
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario"></textarea>
+
+                <label>Motivo de comunicarse:</label>
+                <div>
+                    <input type="radio" id="fan" name="motivo">
+                    <label for="fan">Soy fan de Bruno Ramón</label>
+                </div>
+                <div>
+                    <input type="radio" id="comercial" name="motivo">
+                    <label for="comercial">Comerciales</label>
+                </div>
+                <div>
+                    <input type="radio" id="reclamo" name="motivo">
+                    <label for="reclamo">Reclamos</label>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">Derechos Reservados &copy; 2024</footer>
+</body>
+</html>
